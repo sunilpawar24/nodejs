@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Login</title>
+    <style>
+        /* --- CSS STYLES --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .login-card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            width: 100%;
+            max-width: 380px;
+            text-align: center;
+        }
+
+        .login-card h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #1a1a1a;
+        }
+
+        .login-card p {
+            margin-bottom: 30px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #555;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            border-color: #2c5364;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background: #2c5364;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background: #203a43;
+        }
+
+        .footer-links {
+            margin-top: 25px;
+            font-size: 13px;
+        }
+
+        .footer-links a {
+            color: #2c5364;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <h2>Login</h2>
+        <p>Access your dashboard</p>
+        
+        <form action="#">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="name@company.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="••••••••" required>
+            </div>
+
+            <button type="submit" class="login-btn">Sign In</button>
+        </form>
+
+        <div class="footer-links">
+            <p>Forgot password? <a href="#">Reset here</a></p>
+            <p style="margin-top: 10px;">New here? <a href="#">Create account</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
