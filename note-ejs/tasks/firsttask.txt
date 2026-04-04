@@ -1,0 +1,2 @@
+Title : task 2 
+Details: npm ejs
